@@ -1,0 +1,54 @@
+---
+title: "Pitch Presentation"
+author: "Piotr K"
+date: "June 16, 2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## About
+
+This presentation is to briefly pitch [my application](www.google.com) for predicting the next word.
+
+The application is the capstone project for the Coursera Data Science specialization the Johns Hopkins University  in cooperation with SwiftKey.
+
+## The goal
+
+The goal of this project was to make a Shiny application that predicts the next word.
+
+The idea of this project (and whole course) was to teach the students some data science concepts and methods.
+
+In this specific application we were supposed to learn about natural language processing.
+
+## The methods
+
+The data were taken from the provided corpora: news, blogs, and Twitter.
+
+After taking a sample from the corpora it was cleaned in the following way:
+
+* Removing numbers.
+* Removing punctuation.
+* Removing special characters.
+* Removing extra white spaces.
+* Removing links.
+
+The preprocessed sample was tokeniezed into n-grams (where n = 1..4.) The results are used for predicting the next word as a function of user input and the frequencies in the n-gram tables.
+
+## How to use the app
+
+The user interface is kept extremely simple. There is one input for the user to write the text. Below the user is presented with a text box showing 3 most probable next words.
+
+That's as easy as that : )
+
+## Links
+
+Data Science Specialization: https://www.coursera.org/specializations/jhu-data-science
+
+The application: https://kelnerrr.shinyapps.io/dss_capstone_project/
+
+The code: 
+
+This pitch presentation: http://rpubs.com/kelnerrr/DSS_Capstone_Pitch
